@@ -1,0 +1,608 @@
+:root{
+    --font-size-xl:24px;
+    --font-size-l:18px;
+    --font-size-m:16px;
+
+}
+
+
+@font-face {
+    font-family: poppins;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+body{
+    font-family: poppins;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu{
+    display: revert;
+    padding: 0px;
+    margin-top: 0px;
+}
+.dropdown .btn{
+    background-color:white ;
+    color: rgb(40, 38, 38);
+    font-weight: 700;
+    font-size: var(--font-size-l);
+    border: none;
+    padding: 12px 24px;
+}
+
+.dropdown-item:hover{
+    background-color: rgb(255, 244, 236);
+    color: rgb(25, 24, 24);
+    
+}
+
+.dropdown-item{
+    padding: 16px 16px;
+    font-weight: 500;
+    color: gray;
+}
+
+header h1{
+    font-family: poppins-bold;
+    font-weight:900;
+    color: rgb(235, 48, 48);
+}
+
+header{
+    position: fixed;
+    font-size: var(--font-size-l);
+    right: 0%;
+    left: 0%;
+    padding: 18px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 700;
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
+    /* border: 2px solid; */
+}
+
+header section{
+    display: flex;
+}
+
+.para{
+    /* font-size: var(--font-size-l); */
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.header-btn:hover{
+    border: 2px solid rgb(134, 134, 134);
+}
+
+.header-btn{
+    background: none;
+    border: none;
+    padding: 9px 10px;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid rgb(234, 234, 234);
+    border-radius: 12px;
+    font-weight: 700;
+
+}
+
+.login:hover{
+    background-color: rgba(255, 97, 97, 0.993);
+}
+
+.login{
+    padding: 10px 10px;
+    margin-left: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    /* font-size: var(--font-size-l); */
+    background-color: rgb(235, 48, 48);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    border-radius: 12px;
+}
+
+
+.carousel-indicators li{
+    background-color: rgb(74, 71, 71);
+}
+
+.carousel-indicators .actve{
+    background-color: rgb(235, 48, 48);
+}
+
+.headerReplaceMent{
+    height: 92px;
+}
+
+.give-monthly{
+    text-align: center;
+    font-size: large;
+    padding: 12px;
+    margin-top: 54px;
+}
+
+.give-monthly p{
+    font-family: poppins-bold;
+    font-size: 50px;
+}
+
+.column svg{
+    margin: 0px 12px;
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+    fill: green;
+}
+
+.three-columns{
+    display: flex;
+    justify-content: center;
+    
+    /* padding: 18px 10px; */
+}
+
+.column p{
+    font-family: poppins-bold;
+    font-size: large;
+}
+
+.column{
+    margin: 45px 10px;
+    display: flex;
+    justify-content: space-around;
+    width:auto;
+    padding: 24px 12px;
+}
+
+.column1{
+    border-bottom: 2px solid rgb(220, 220, 220);
+    border-top: 2px solid rgb(220, 220, 220);
+    border-right: 2px solid rgb(220, 220, 220);
+    margin-right: 0px;
+}
+
+.column2{
+    border-bottom: 2px solid rgb(220, 220, 220);
+    border-top: 2px solid rgb(220, 220, 220);
+    margin: 45px 0px;
+}
+.column3{
+    border-bottom: 2px solid rgb(220, 220, 220);
+    border-top: 2px solid rgb(220, 220, 220);
+    border-left: 2px solid rgb(220, 220, 220);
+    margin-left: 0px;
+}
+
+.supported-childs{
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 52px;
+    justify-content: space-evenly;
+    margin:45px 0px;
+}
+
+
+
+.supported-box{
+    box-shadow: 2px 2px 24px rgb(198, 197, 197);
+    border-radius: 16px;
+    transition: transform .5s .1s ;
+}
+
+.supported-box-image img{
+    border-radius: 16px;
+}
+
+.bottom-card{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 12px;
+    /* border: 2px solid ; */
+    border-radius: 0px 0px 16px 16px;
+
+}
+
+.supporters{
+    display: flex;
+    font-size: 14px;
+    
+    
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.count{
+    margin-right: -14px;
+    font-family: poppins-bold;
+    color: rgb(235, 48, 48);
+}
+
+.supporters p,.percent{
+    margin: 0px 8px;
+}
+
+.supporters img{
+    height: 34px;
+    width: 34px;
+}
+
+.percent{
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 4px solid rgb(163, 163, 163);
+}
+
+.supporter-button{
+    display: none;
+    transition: display 10s .2s ease-in;
+}
+
+.supported-box:hover .supporter-button{
+    display: revert;
+}
+.supported-box:hover .supporters{
+   display: none;
+}
+
+.supported-box:hover{
+    transform: scale(1.05);
+}
+
+
+.fundraiser-image{
+    width: 385px;
+    height: 250px;
+    border-radius: 12px 12px 0px 0px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    
+}
+
+.fundraiser-image1{
+    background-image: url(https://cfstatic.give.do/17256b46-5966-4258-8e5f-95449ab4ece3.webp);
+}
+.fundraiser-image2{
+    background-image: url(https://cfstatic.give.do/aecc7339-69e5-47df-8bc1-14bf1da61f54.webp);
+}
+.fundraiser-image3{
+    background-image: url(https://cfstatic.give.do/ab425988-f410-4f07-a7ef-855bc2554fb3.webp);
+}
+.fundraiser-image4{
+    background-image: url(https://cfstatic.give.do/2dfa65f7-008e-49f4-811a-981f829992af.webp);
+}
+.fundraiser-image5{
+    background-image: url(https://cfstatic.give.do/88a85ac1-0c38-421a-8743-1542be9e0afc.webp);
+}
+.fundraiser-image6{
+    background-image: url(https://cfstatic.give.do/f55ba7ed-ac5c-4ee8-901b-02d446cbc799.jpg);
+}
+
+.support-a-fund-raiser{
+    padding: 80px 100px;
+    background-color: rgb(255, 248, 238);
+}
+
+.fundraiser-title p{
+    font-family: poppins-bold;
+    font-size: 50px;
+    
+}
+
+.fundraiser-title article{
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+
+.fundraiser-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 45px 10px;
+}
+
+.fundraiser{
+    background-color: white;
+    width: 385px;
+    box-shadow: 2px 2px 24px rgb(198, 197, 197);
+    border-radius: 16px;
+    padding-bottom: 10px;
+    transition: transform .5s .1s ;
+}
+
+.fundraiser> article{
+    margin: 20px 10px;
+    font-size: large;
+    font-family: poppins-bold;
+    color: rgb(50, 50, 50);
+}
+
+.fundraiser svg{
+    height: 24px;
+    width: 24px;
+    fill: gray;
+
+}
+
+.fundraiser-btn{
+    width: 365px;
+    margin: 20px 10px;
+}
+
+.fundraiser-button{
+    display: none;
+}
+
+.fundraiser:hover .fundraiser-button{
+    display: revert;
+}
+
+.fundraiser:hover .progress,.fundraiser:hover .fundraiser-amount{
+    display: none;
+}
+
+.fundraiser:hover{
+    transform: scale(1.05);
+}
+
+
+.fundraiser-support-time{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.fundraiser-time,.fundraiser-support{
+    display: flex;
+    gap: 5px;
+    background-color: rgb(240, 240, 240);
+    padding: 5px 6px 0px 4px;
+    border-radius: 6px;
+}
+
+.progress{
+    margin: 10px;
+}
+
+.fundraiser-amount{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.fundraiser-amount>p{
+    font-size: larger;
+    font-family: poppins-bold;
+}
+/* 
+.partners1{
+    background-image: url(https://cfstatic.give.do/7afc16b8-7475-4b4a-b65b-67ec785d213f.jpg);
+}
+.partners2{
+    background-image: url(https://cfstatic.give.do/3cae5cea-f64d-4b22-bbbb-53f51c8ccc26.jpg);
+}
+.partners3{
+    background-image: url(https://cfstatic.give.do/502810f9-199b-4f3c-808d-990111702376.png);
+}
+.partners4{
+    background-image: url(https://cfstatic.give.do/0f3abf43-1e05-42af-b118-99e6a356c628.jpg);
+}
+.partners5{
+    background-image: url(https://cfstatic.give.do/4df667df-e975-405b-ac8f-25196e90a34f.jpg);
+}
+.partners6{
+    background-image: url();
+} */
+
+.partners1,.partners2,.partners3,.partners4,.partners5,.partners6{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 100px;
+    width: 120px;
+    
+    background-color: rgb(253, 246, 238);
+}
+
+.partners-logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 45px;
+
+}
+
+.partners{
+    width: 150px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    background-color: rgb(253, 246, 238);
+}
+
+.ngo-partners{
+    margin: 55px 40px;
+}
+
+.partners-title{
+    margin: 0px 40px;
+}
+
+.partners-title p{
+    font-family: poppins-bold;
+    font-size: 35px;
+}
+
+.partners-title article{
+    font-size: larger;
+    padding-bottom: 45px;
+}
+
+.raise-funds{
+    margin: 136px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.raise-funds >section{
+    background-color: rgb(254, 244, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.raise-funds1{
+    padding: 0px 80px;
+}
+
+.raise-title{
+    font-family: poppins-bold;
+    font-size: 40px;
+}
+.raise-article{
+    font-size: larger;
+    
+}
+
+.raise-login{
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+
+
+.trusted{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 64px 20px;
+}
+
+.trusted h3{
+    font-weight: 600;
+    color: rgb(235, 48, 48);
+}
+
+.trusted>article{
+    font-size: 40px;
+    text-align: center;
+    font-family: poppins-bold;
+    font-weight: 900;
+}
+
+.trusted-info{
+    display: flex;
+    margin-top: 34px;
+    box-shadow: 2px 2px 24px rgb(231, 231, 231);
+}
+
+.trusted-info >section{
+    padding: 24px;
+
+}
+
+.trusted-count{
+   font-size: 40px;
+   font-weight: 700;
+   font-family: poppins;
+}
+
+/* 
+#mobile-close{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    right: 16px;
+    top: 16px;
+} */
+
+
+
+
+/* @media(width <800px){
+
+    body{
+        font-size: 12px;
+    }
+    header{
+        display: none;
+        right: 0;
+        left: auto;
+        width: 400px;
+        height: 1000px;
+        background-color: aqua;
+    }
+
+    #mobile-open{
+        display: revert;
+        position: fixed;
+        top: 18px;
+        right: 20px;
+        z-index: 10;
+    }
+    header>h1{
+        display: none;
+    }
+    .headerReplaceMent>h1{
+        position: fixed;
+        top: 18px;
+        left: 18px;
+        z-index: 10;
+    }
+    header >section{
+        display: revert;
+        margin-left: 45px;
+        
+    }
+
+    header section div{
+       margin-top: 65px;
+       margin-bottom: -65px;
+    }
+
+
+    .header-btn{
+        margin-top: 120px;
+        width: 250px;
+        
+        
+    }
+
+    .login{
+        width: 250px;
+        margin-top: 12px;
+        margin-left: 0;
+    }
+
+
+
+    .raise-funds >section{
+        display: revert;
+        width: auto;
+    }
+
+    .raise-funds2 img{
+        height: 300px;
+
+    }
+} */

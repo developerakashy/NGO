@@ -1,0 +1,53 @@
+body{
+    margin: 0%;
+    height: 100vh;
+}
+
+header{
+    gap: 50rem;
+    padding: 10px;
+}
+.headerReplaceMent{
+    height: 50px;
+}
+
+header button{
+    font-size: 20px;
+    color: rgb(80, 80, 80);
+}
+
+header >h1{
+    margin: 0px;
+}
+
+header a{
+    color: red;
+    text-decoration: none;
+    
+}
+
+section img{
+    width: 100%;
+    background-size: cover;
+}
+
+.content{
+    position: absolute;
+    top: 12em;
+    left: 45px;
+    width: 35%;
+}
+
+.content h2{
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.content article{
+    font-size: 18px;
+}
+
+.content button{
+    font-size: 20px;
+    margin: 24px 0px 24px 0px;
+}
